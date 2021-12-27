@@ -12,6 +12,7 @@ django-phonenumber-field
 django-filter==2.3.0
 djangorestframework==3.11.1
 dj-database-url
+phonenumbers
 
 
 # Databases
