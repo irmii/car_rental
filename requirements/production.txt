@@ -1,0 +1,26 @@
+pytz
+requests
+python-dotenv
+ipython
+python-decouple==3.5
+
+# Django and co
+djoser
+django
+django-timezone-field
+django-phonenumber-field
+django-filter==2.3.0
+djangorestframework==3.11.1
+dj-database-url
+
+
+# Databases
+psycopg2-binary
+dj-database-url
+
+# Distributed tasks
+# celery
+# redis
+# django-celery-beat
+# django-celery-results
+# django-redis

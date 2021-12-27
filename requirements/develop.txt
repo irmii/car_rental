@@ -1,0 +1,10 @@
+-r production.txt
+
+# TEST
+pytest                      <7
+
+
+# LINTERS
+pre-commit                  <3, >=2.10.1
+wemake-python-styleguide    <1, >=0.14.1
+mypy                        <1
