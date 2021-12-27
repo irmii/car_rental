@@ -100,21 +100,23 @@ class Client(models.Model):
         User,
         on_delete=models.CASCADE,
     )
-    first_name = models.TextField(max_length=MAXLENGTH200)
-    second_name = models.TextField(max_length=MAXLENGTH200)
-    third_name = models.TextField(max_length=MAXLENGTH200)
-    address = models.CharField(max_length=MAXLENGTH200)
+    first_name = models.TextField(max_length=MAXLENGTH200, null=True)
+    second_name = models.TextField(max_length=MAXLENGTH200, null=True)
+    third_name = models.TextField(max_length=MAXLENGTH200, null=True)
+    address = models.CharField(max_length=MAXLENGTH200, null=True)
     birth_date = models.DateField(
         null=True,
         blank=True,
     )
-    phone_number = PhoneNumberField(blank=True)
-    email = models.EmailField(max_length=MAXLENGTH200)
+    phone_number = PhoneNumberField(blank=True, null=True)
+    email = models.EmailField(max_length=MAXLENGTH200, null=True)
     experience = models.IntegerField(
         'Стаж, в целых годах',
+        null=True,
     )
     drivers_license = models.IntegerField(
         'Номер водительского удостоверения',
+        null=True,
     )
 
     class Meta(object):

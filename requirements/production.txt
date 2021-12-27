@@ -13,6 +13,7 @@ django-filter==2.3.0
 djangorestframework==3.11.1
 dj-database-url
 phonenumbers
+djangorestframework_simplejwt
 
 
 # Databases
